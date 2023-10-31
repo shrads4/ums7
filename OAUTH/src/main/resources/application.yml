@@ -4,6 +4,9 @@ access-token:
 refresh-token:
   private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
+wso2-token-url: ${WS02_TOKEN_URL}
+wso2-client-token: ${WS02_CLIENT_TOKEN}
+
 spring:
   profiles:
     active: dev
