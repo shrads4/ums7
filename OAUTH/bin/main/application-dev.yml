@@ -1,0 +1,6 @@
+ACCESS_TOKEN_PRIVATE_KEY_PATH: "access-refresh-token-keys/access-token-private.key"
+ACCESS_TOKEN_PUBLIC_KEY_PATH: "access-refresh-token-keys/access-token-public.key"
+REFRESH_TOKEN_PRIVATE_KEY_PATH: "access-refresh-token-keys/refresh-token-private.key"
+REFRESH_TOKEN_PUBLIC_KEY_PATH: "access-refresh-token-keys/refresh-token-public.key"
+WS02_TOKEN_URL: "https://localhost:9443/oauth2/token"
+WS02_CLIENT_TOKEN: "dWZWcFprVnByN2JMZHU0WktoXzBTQktoWUtRYTpNdFdsQlBadFV4R2ZDUXRYcE84dG5jSWhqRzhh"

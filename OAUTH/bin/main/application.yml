@@ -1,0 +1,38 @@
+access-token:
+  private: ${ACCESS_TOKEN_PRIVATE_KEY_PATH}
+  public: ${ACCESS_TOKEN_PUBLIC_KEY_PATH}
+refresh-token:
+  private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
+  public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
+wso2-token-url: ${WS02_TOKEN_URL}
+wso2-client-token: ${WS02_CLIENT_TOKEN}
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: OAUTH-APP
+  datasource:
+    url: jdbc:postgresql://localhost:5431/microservice
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+
+hibernate:
+  dialect: org.hibernate.dialect.MySQL5Dialect
+  show_sql: true
+  hbm2ddl:
+    auto: update
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+server:
+  port: 8000
+
